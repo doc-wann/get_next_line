@@ -19,7 +19,7 @@ t_bool	ft_strchr(char *s, char c)
 char *reader(int fd, char *buffer)
 {
 	char	*tmp;
-	size_t	r;
+	ssize_t	r;
 
 	tmp = malloc(sizeof(char) * BUFFER_SIZE + 1);
 	if (tmp == NULL)
