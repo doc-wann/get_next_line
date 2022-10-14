@@ -25,7 +25,7 @@ char *reader(int fd, char *buffer)
 	if (tmp == NULL)
 		return (NULL);
 	r = 1;
-	while (!ft_strchr(buffer, 'n'))
+	while (!ft_strchr(buffer, '\n'))
 	{
 		r = read(fd, tmp, BUFFER_SIZE);
 		if (r == 0 || r == -1)
